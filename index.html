@@ -1,0 +1,32 @@
+<body>
+    <div class="container">
+        <h1>Calculo del Factor de Seguridad</h1>
+        <form id="factorForm">
+            <label for="cohesion">Cohesión (C) [kPa]:</label>
+            <input type="number" id="cohesion" required>
+            <label for="peso">Peso del Suelo (P) [kg]:</label>
+            <input type="number" id="peso" required>
+            <label for="altura">Altura del Talud (H) [m]:</label>
+            <input type="number" id="altura" required>
+            <label for="angulo">Ángulo de Fricción Interna (Z) [°]:</label>
+            <input type="number" id="angulo" required>
+            <button type="submit">Calcular</button>
+            <button type="button" id="resetButton">Restablecer</button>
+        </form>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Factor de Seguridad</th>
+                    <th>Estabilidad</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
